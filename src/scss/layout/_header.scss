@@ -1,10 +1,15 @@
+.header {
+  height: 45px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
 .header__box {
   width: 44px;
   height: 44px;
   background-color: $color-medium;
-  position: fixed;
-  top: 0;
-  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
