@@ -1,8 +1,15 @@
-.page__header {
-  @media all and (min-width: 768px) {
-    height: 100px;
-  }
-  @media all and (min-width: 1280px) {
-    height: 110px;
-  }
+.header__box {
+  width: 44px;
+  height: 44px;
+  background-color: $color-medium;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__box--pic {
+  width: 16px;
+  height: 14px;
 }
