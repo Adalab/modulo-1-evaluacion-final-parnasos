@@ -1,9 +1,13 @@
 .section__2 {
+  height: auto;
   background-color: #eff9ff;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @media all and (min-width: 768px) {
+    padding: 0 36px 0 36px;
+  }
 }
 .section__2--title {
   text-align: center;
@@ -13,26 +17,35 @@
   font-weight: 900;
   text-transform: capitalize;
   margin-top: 30px;
+  @media all and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 45px;
+  }
 }
 .section__2--container {
   display: grid;
-  justify-content: center;
-  align-items: center;
+  /*justify-content: center;
+  align-items: center;*/
   grid-template-columns: 180px;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "article__1" "article__2" "article__3";
+  grid-template-areas: "a" "b" "c";
+  @media all and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 28px;
+  }
 }
 
 .article {
   text-align: center;
-  .1 {
-    grid-area: article__1;
+  .a {
+    grid-area: a;
   }
-  .2 {
-    grid-area: article__2;
+  .b {
+    grid-area: b;
   }
-  .3 {
-    grid-area: article__3;
+  .c {
+    grid-area: c;
   }
 }
 
@@ -40,12 +53,20 @@
   font-size: 18px;
   font-family: $font-title;
   margin-top: 45px;
+  @media all and (min-width: 768px) {
+    font-size: 24px;
+  }
 }
 .article__text {
   font-size: 18px;
   font-family: $font-main;
   line-height: 30px;
-  padding-top: 5px;
+  padding-top: 14px;
+  @media all and (min-width: 768px) {
+    font-size: 20px;
+    width: 223px;
+    padding: 14px 10px 0 10px;
+  }
 }
 .section__button {
   width: 184px;
@@ -57,4 +78,8 @@
   font-family: $font-main;
   margin: 30px auto 60px auto;
   border: 2px solid $color-button;
+  @media all and (min-width: 768px) {
+    width: 210px;
+    margin: 60px auto;
+  }
 }

@@ -5,7 +5,11 @@
   flex-direction: column;
   background-color: $color-dark;
   color: $color-none;
-  position: relative;
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 .footer__box {
   width: 45px;
@@ -18,6 +22,11 @@
   align-items: center;
   line-height: 45px;
   margin: auto;
+  @media all and (min-width: 768px) {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .footer__box--icon {
@@ -36,9 +45,16 @@
   font-family: $font-main;
   font-weight: lighter;
   margin-bottom: 45px;
+  padding-top: 5px;
+  @media all and (min-width: 768px) {
+    order: 0;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 45px;
+  }
 }
 .Copy__2 {
-  padding: 10px;
+  padding-top: 10px;
 }
 .articles,
 .twitter {
@@ -48,6 +64,19 @@
 }
 .twitter {
   margin: 30px auto 30px auto;
+  @media all and (min-width: 768px) {
+    margin-top: 45px;
+    width: 210px;
+    text-align: left;
+  }
+}
+.articles {
+  margin-top: 45px;
+  @media all and (min-width: 768px) {
+    width: 210px;
+    text-align: left;
+    margin-bottom: 45px;
+  }
 }
 .article__link,
 .twitter__link {
@@ -55,6 +84,6 @@
   text-decoration: none;
 }
 .li {
-  padding-top: 10px;
+  padding-bottom: 10px;
   font-weight: 200;
 }

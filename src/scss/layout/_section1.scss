@@ -1,27 +1,36 @@
 .section__1 {
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: left;
   flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
+  @media all and (min-width: 768px) {
+    margin-left: 40px;
+  }
 }
 .section__1--subtitle {
   color: $color-light;
   font-weight: 400;
   font-size: 14px;
   font-family: $font-main;
-  margin: 30px auto auto 15px;
+  margin-top: 30px;
   padding-bottom: 10px;
 }
 
 .section__1--title {
-  color: solid black;
+  width: 290px;
+  height: 60px;
   font-size: 24px;
   line-height: 30px;
   font-family: $font-title;
   font-weight: 900;
   text-transform: capitalize;
-  padding-right: 50px;
-  margin: 1px auto 5px 15px;
+  @media all and (min-width: 768px) {
+    font-size: 26px;
+    width: auto;
+  }
 }
 
 .section__1--text {
@@ -31,7 +40,10 @@
   font-family: $font-main;
   font-weight: 500;
   text-align: justify;
-  margin: 15px 15px auto 15px;
+  margin-top: 15px;
+  @media all and (min-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .section__1--button {
@@ -43,7 +55,8 @@
   text-transform: capitalize;
   font-size: 20px;
   font-family: $font-main;
-  margin: 30px auto 45px 15px;
+  margin-top: 30px;
+  margin-bottom: 45px;
   padding: 5px 25px 5px 25px;
   border: 2px solid $color-button;
 }

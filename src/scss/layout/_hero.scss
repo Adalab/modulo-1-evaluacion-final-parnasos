@@ -1,11 +1,8 @@
 .hero {
   width: 100vw;
   height: 100vh;
-  top: 0;
 }
 .hero__pic {
-  width: 100vw;
-  height: 100vh;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
@@ -24,11 +21,16 @@
   font-family: $font-title;
   text-transform: uppercase;
   text-align: center;
+  @media all and (min-width: 768px) {
+    width: 690px;
+    height: 212px;
+    font-size: 80px;
+    line-height: 106px;
+  }
 }
-
 .hero__subtitle {
-  width: 290px;
-  height: 21px;
+  /*width: 290px;
+  height: 21px;*/
   color: $color-none;
   font-size: 16px;
   font-family: $font-main;
@@ -36,6 +38,9 @@
   margin: 10px 0 45px 0;
   font-weight: normal;
   letter-spacing: normal;
+  @media all and (min-width: 768px) {
+    font-size: 24px;
+  }
 }
 .hero__box {
   width: 45px;
