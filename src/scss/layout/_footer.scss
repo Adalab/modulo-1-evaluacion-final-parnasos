@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.footer__box {
+  position: absolute;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: $color-none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__box--icon {
+  width: 20px;
+  height: 24px;
+  vertical-align: middle;
+}
