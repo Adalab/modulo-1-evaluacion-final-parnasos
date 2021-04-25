@@ -1,0 +1,36 @@
+@keyframes start {
+  from {
+    transform: translate(0, -50%) rotate(0);
+  }
+  to {
+    transform: translate(0, -50%) rotate(360deg);
+  }
+}
+@keyframes start_hover {
+  from {
+    background-color: $color-none;
+    transform: scale(1.5) translateY(-25%) rotate(0);
+  }
+  to {
+    background-color: $color-light;
+    transform: scale(1.5) translateY(-25%) rotate(360deg);
+  }
+}
+@keyframes start_780 {
+  from {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes start_hover_780 {
+  from {
+    background-color: $color-none;
+    transform: scale(1.5) translate(-25%, -25%) rotate(0);
+  }
+  to {
+    background-color: $color-light;
+    transform: scale(1.5) translate(-25%, -25%) rotate(360deg);
+  }
+}
