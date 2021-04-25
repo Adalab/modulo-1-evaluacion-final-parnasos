@@ -14,10 +14,28 @@
     justify-content: center;
   }
 }
+
+@keyframes start {
+  from {
+    transform: translate(0, -50%) rotate(0);
+  }
+  to {
+    transform: translate(0, -50%) rotate(360deg);
+  }
+}
+@keyframes start_hover {
+  from {
+    background-color: $color-none;
+    transform: scale(1.5) translateY(-25%) rotate(0);
+  }
+  to {
+    background-color: $color-light;
+    transform: scale(1.5) translateY(-25%) rotate(360deg);
+  }
+}
 .footer__icon {
   width: 45px;
   height: 45px;
-  transform: translate(0, -50%);
   border-radius: 50%;
   background-image: url(../images/ico-arrow.svg);
   background-repeat: no-repeat;
@@ -29,18 +47,26 @@
   align-items: center;
   line-height: 45px;
   margin: auto;
-  transition: background-color, transform ease 0.5s;
+  // transition: background-color ease 1.5s, transform ease 0.5s;
+  animation: start 1.5s ease 0s infinite alternate none;
+
   &:hover {
-    background-color: $color-light;
-    transform: scale(2) translate(-25%, -25%);
+    animation: start_hover 2.5s ease 0s infinite alternate none;
   }
+  /*&:hover {
+    background-color: $color-light;
+    transform: scale(1.5) translateY(-25%);
+  }
+*/
   @media all and (min-width: 768px) {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
+    &:hover {
+      transform: scale(1.5) translate(-25%, -25%);
+    }
   }
 }
-
 .Copy {
   order: 1;
   display: flex;

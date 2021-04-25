@@ -35,8 +35,6 @@
   }
 }
 .hero__subtitle {
-  /*width: 290px;
-  height: 21px;*/
   color: $color-none;
   font-size: 16px;
   font-family: $font-main;
@@ -58,12 +56,9 @@
   background-position: center;
   vertical-align: middle;
   margin: 45px auto 53px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color, transform ease 0.5s;
+  transition: background-color ease 1.5s, transform ease 0.5s;
   &:hover {
     background-color: $color-light;
-    transform: scale(2);
+    transform: scale(1.5);
   }
 }
