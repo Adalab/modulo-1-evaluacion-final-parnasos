@@ -1,63 +1,25 @@
 <footer class="footer">
-  <div class="footer__box">
-    <a href="#start" title="Top of Site">
-      <img
-        class="footer__box--icon"
-        src="./assets/images/ico-arrow.svg"
-        alt="ico-arrow"
-      />
-    </a>
-  </div>
+  <a href="#start" title="Top of Site"><div class="footer__icon"></div></a>
   <small class="Copy"
     ><div>&copy;2021</div>
-    <div class="Copy__2">we &hearts; components</div></small
+    <div class="Copy__2">
+      we <span class="love">&hearts;</span> components
+    </div></small
   >
   <nav>
     <ul class="articles">
-      <li class="li">
-        <a class="article__link" href="https://adalab.es/" target="blank"
-          >Articles</a
-        >
-      </li>
-      <li class="li">
-        <a class="article__link" href="https://adalab.es/" target="blank"
-          >Books</a
-        >
-      </li>
-      <li class="li">
-        <a class="article__link" href="https://adalab.es/" target="blank"
-          >Events</a
-        >
-      </li>
-      <li class="li">
-        <a class="article__link" href="https://adalab.es/" target="blank"
-          >Reasons</a
-        >
-      </li>
-      <li class="li">
-        <a class="article__link" href="https://adalab.es/" target="blank"
-          >Tips</a
-        >
-      </li>
+      <include src="./links.html" title="Articles"></include>
+      <include src="./links.html" title="Books"></include>
+      <include src="./links.html" title="Events"></include>
+      <include src="./links.html" title="Reasons"></include>
+      <include src="./links.html" title="Tips"></include>
     </ul>
   </nav>
   <nav>
-    <ul class="twitter">
-      <li class="li">
-        <a class="twitter__link" href="https://adalab.es/" target="blank"
-          >Twitter</a
-        >
-      </li>
-      <li class="li">
-        <a class="twitter__link" href="https://adalab.es/" target="blank"
-          >Instagram</a
-        >
-      </li>
-      <li class="li">
-        <a class="twitter__link" href="https://adalab.es/" target="blank"
-          >Mastodon.social</a
-        >
-      </li>
+    <ul class="social">
+      <include src="./links.html" title="Twitter"></include>
+      <include src="./links.html" title="Instagram"></include>
+      <include src="./links.html" title="Mastodon.Social"></include>
     </ul>
   </nav>
 </footer>

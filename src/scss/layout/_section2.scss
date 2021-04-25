@@ -90,6 +90,11 @@
   font-family: $font-main;
   margin: 30px auto 60px auto;
   border: 2px solid $color-button;
+  &:hover {
+    background-color: $color-none;
+    color: $color-button;
+    border-color: $color-dark;
+  }
   @media all and (min-width: 768px) {
     width: 210px;
     margin: 60px auto;
