@@ -8,6 +8,9 @@
   @media all and (min-width: 768px) {
     padding: 0 36px 0 36px;
   }
+  @media all and (min-width: 1280px) {
+    padding: 0 81px 0 81px;
+  }
 }
 .section__2--title {
   text-align: center;
@@ -21,6 +24,9 @@
     font-size: 26px;
     line-height: 45px;
   }
+  @media all and (min-width: 1280px) {
+    font-size: 32px;
+  }
 }
 .section__2--container {
   display: grid;
@@ -33,6 +39,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 28px;
+  }
+  @media all and (min-width: 1280px) {
+    column-gap: 30px;
   }
 }
 
@@ -67,6 +76,9 @@
     width: 223px;
     padding: 14px 10px 0 10px;
   }
+  @media all and (min-width: 1280px) {
+    width: 354px;
+  }
 }
 .section__button {
   width: 184px;
@@ -81,5 +93,8 @@
   @media all and (min-width: 768px) {
     width: 210px;
     margin: 60px auto;
+  }
+  @media all and (min-width: 1280px) {
+    width: 255px;
   }
 }

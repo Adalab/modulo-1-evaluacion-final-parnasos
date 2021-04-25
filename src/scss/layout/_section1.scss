@@ -9,6 +9,9 @@
   @media all and (min-width: 768px) {
     margin-left: 40px;
   }
+  @media all and (min-width: 1280px) {
+    margin-left: 275px;
+  }
 }
 .section__1--subtitle {
   color: $color-light;
@@ -17,6 +20,9 @@
   font-family: $font-main;
   margin-top: 30px;
   padding-bottom: 10px;
+  @media all and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 
 .section__1--title {
@@ -31,6 +37,9 @@
     font-size: 26px;
     width: auto;
   }
+  @media all and (min-width: 1280px) {
+    font-size: 32px;
+  }
 }
 
 .section__1--text {
@@ -44,6 +53,9 @@
   @media all and (min-width: 768px) {
     font-size: 20px;
     width: 690px;
+  }
+  @media all and (min-width: 1280px) {
+    width: 730px;
   }
 }
 
@@ -60,4 +72,10 @@
   margin-bottom: 45px;
   padding: 5px 25px 5px 25px;
   border: 2px solid $color-button;
+  @media all and (min-width: 768px) {
+    width: 90px;
+  }
+  @media all and (min-width: 1280px) {
+    width: 160px;
+  }
 }
