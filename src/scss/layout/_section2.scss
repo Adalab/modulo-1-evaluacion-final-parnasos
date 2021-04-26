@@ -1,15 +1,14 @@
 .section__2 {
-  height: auto;
   background-color: #eff9ff;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   @media all and (min-width: 768px) {
-    padding: 0 36px 0 36px;
+    padding: 0 36px;
   }
   @media all and (min-width: 1280px) {
-    padding: 0 81px 0 81px;
+    padding: 0 81px;
   }
 }
 .section__2--title {
@@ -30,8 +29,6 @@
 }
 .section__2--container {
   display: grid;
-  /*justify-content: center;
-  align-items: center;*/
   grid-template-columns: 180px;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "a" "b" "c";
@@ -44,7 +41,6 @@
     column-gap: 30px;
   }
 }
-
 .article {
   text-align: center;
   .a {
@@ -57,7 +53,6 @@
     grid-area: c;
   }
 }
-
 .article__title {
   font-size: 18px;
   font-family: $font-title;
@@ -90,6 +85,8 @@
   font-family: $font-main;
   margin: 30px auto 60px auto;
   border: 2px solid $color-button;
+  transition: background-color 0.5s ease, color 0.2s ease,
+    border-color 0.5s ease;
   &:hover {
     background-color: $color-none;
     color: $color-button;
